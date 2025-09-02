@@ -1,15 +1,18 @@
-﻿public static class Sorting {
-    public static void Run() {
-        var numbers = new[] { 3, 2, 1, 6, 4, 9, 8 };
-        SortArray(numbers);
-        Console.Out.WriteLine("int[]{{{0}}}", string.Join(", ", numbers)); //int[]{1, 2, 3, 4, 6, 8, 9}
-    }
-
-    private static void SortArray(int[] data) {
-        for (var sortPos = data.Length - 1; sortPos >= 0; sortPos--) {
-            for (var swapPos = 0; swapPos < sortPos; ++swapPos) {
-                if (data[swapPos] > data[swapPos + 1]) {
-                    (data[swapPos + 1], data[swapPos]) = (data[swapPos], data[swapPos + 1]);
+﻿public class Sorting
+{
+    public static void SortArray(int[] array)
+    {
+        int n = array.Length;
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (array[j] > array[j + 1])
+                {
+                    // Swap
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
                 }
             }
         }
