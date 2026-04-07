@@ -1,0 +1,29 @@
+{
+  "name": "cse340",
+  "version": "1.0.0",
+  "description": "CSE Motors inventory project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.19.0",
+<<<<<<< HEAD
+    "pg": "^8.20.0",
+    "postgres-interval": "^4.0.2"
+=======
+    "pg": "^8.20.0"
+>>>>>>> cf1e696 (Assignment 3 complete: server running and inventory queries working)
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
